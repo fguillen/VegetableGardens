@@ -1,0 +1,78 @@
+<mockup version="1.0" skin="sketch" measuredW="925" measuredH="520" mockupW="560" mockupH="491">
+  <controls>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TextArea" x="427" y="107" w="437" h="50" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TextInput" x="545" y="191" w="173" h="-1" measuredW="79" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="487" y="192" w="62" h="21" measuredW="36" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>email</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="365" y="29" w="560" h="491" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>http%3A//vegetables.com/admin</text>
+        <value>0</value>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Title" x="427" y="107" w="-1" h="-1" measuredW="370" measuredH="50" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>home%26bm%3Bhome.bmml%26bm%3Bhome.bmml%26bm%3Bhome.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2262%2C78%2C432%2C128%22%20href%3D%22home.bmml%22%20alt%3D%22home%22%20id%3D%2221%22/%3E</map>
+        <text>Vegetables%20Gardens</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::TextInput" x="545" y="218" w="173" h="-1" measuredW="79" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Label" x="487" y="219" w="62" h="21" measuredW="33" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>pass</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::PointyButton" x="541" y="259" w="-1" h="-1" measuredW="183" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>producer_my_orders%26bm%3Bproducer_my_orders.bmml%26bm%3Bproducer_my_orders.bmml%26bm%3Bproducer_my_orders.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22176%2C230%2C359%2C257%22%20href%3D%22producer_my_orders.bmml%22%20alt%3D%22producer_my_orders%22%20id%3D%2230%22/%3E</map>
+        <text>Go%20to%20my%20Vegetable%20Garden</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Label" x="610" y="311" w="-1" h="-1" measuredW="24" measuredH="28" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>20</size>
+        <text>or</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::PointyButton" x="545" y="389" w="-1" h="-1" measuredW="174" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>producer_config%26bm%3Bproducer_config.bmml%26bm%3Bproducer_config.bmml%26bm%3Bproducer_config.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22180%2C360%2C354%2C387%22%20href%3D%22producer_config.bmml%22%20alt%3D%22producer_config%22%20id%3D%2232%22/%3E</map>
+        <text>Add%20my%20Vegetable%20Garden</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::CallOut" x="812" y="104" w="64" h="28" measuredW="64" measuredH="43" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Admin</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::FieldSet" x="465" y="169" w="315" h="130" measuredW="200" measuredH="170" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Autentication%20to%20access%20to%20my%20Vegetable%20Garden</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::FieldSet" x="465" y="354" w="315" h="87" measuredW="200" measuredH="170" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>I%20want%20to%20add%20my%20Vegetable%20Garden%20to%20this%20site</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

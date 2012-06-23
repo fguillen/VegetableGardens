@@ -1,0 +1,185 @@
+<mockup version="1.0" skin="sketch" measuredW="1058" measuredH="579" mockupW="701" mockupH="550">
+  <controls>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TextArea" x="427" y="107" w="437" h="50" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="357" y="29" w="560" h="550" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>http%3A//vegetables.com/orders/1</text>
+        <value>0</value>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Title" x="427" y="107" w="-1" h="-1" measuredW="370" measuredH="50" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>home%26bm%3Bhome.bmml%26bm%3Bhome.bmml%26bm%3Bhome.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2270%2C78%2C440%2C128%22%20href%3D%22home.bmml%22%20alt%3D%22home%22%20id%3D%2221%22/%3E</map>
+        <text>Vegetables%20Gardens</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::SubTitle" x="439" y="172" w="-1" h="-1" measuredW="184" measuredH="33" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Order%20Confirmed</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="__group__" x="447" y="220" w="330" h="33" measuredW="330" measuredH="33" zOrder="4" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="2" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="0" locked="false" isInGroup="35">
+          <controlProperties>
+            <icon>HandClosedIcon%7Csmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="44" y="5" w="-1" h="-1" measuredW="84" measuredH="21" zOrder="1" locked="false" isInGroup="35">
+          <controlProperties>
+            <text>lettuce%201.50%u20AC</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="__group__" x="176" y="0" w="21" h="33" measuredW="21" measuredH="33" zOrder="2" locked="false" isInGroup="35">
+          <groupChildrenDescriptors>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="0" w="-1" h="-1" measuredW="21" measuredH="33" zOrder="0" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>3</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::SubTitle" x="253" y="0" w="-1" h="-1" measuredW="77" measuredH="33" zOrder="3" locked="false" isInGroup="35">
+          <controlProperties>
+            <text>4.50%u20AC</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="36" controlTypeID="__group__" x="447" y="254" w="330" h="35" measuredW="330" measuredH="35" zOrder="5" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="2" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="0" locked="false" isInGroup="36">
+          <controlProperties>
+            <icon>HandClosedIcon%7Csmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="44" y="5" w="-1" h="-1" measuredW="88" measuredH="21" zOrder="1" locked="false" isInGroup="36">
+          <controlProperties>
+            <text>carrots%200.30%u20AC</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="__group__" x="176" y="2" w="22" h="33" measuredW="22" measuredH="33" zOrder="2" locked="false" isInGroup="36">
+          <groupChildrenDescriptors>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="0" w="-1" h="-1" measuredW="22" measuredH="33" zOrder="0" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>0</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::SubTitle" x="253" y="0" w="-1" h="-1" measuredW="77" measuredH="33" zOrder="3" locked="false" isInGroup="36">
+          <controlProperties>
+            <text>0.00%u20AC</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="37" controlTypeID="__group__" x="447" y="288" w="330" h="33" measuredW="330" measuredH="33" zOrder="6" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="2" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="0" locked="false" isInGroup="37">
+          <controlProperties>
+            <icon>HandClosedIcon%7Csmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="44" y="5" w="-1" h="-1" measuredW="81" measuredH="21" zOrder="1" locked="false" isInGroup="37">
+          <controlProperties>
+            <text>onions%200.20%u20AC</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="__group__" x="176" y="0" w="22" h="33" measuredW="22" measuredH="33" zOrder="2" locked="false" isInGroup="37">
+          <groupChildrenDescriptors>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="0" w="-1" h="-1" measuredW="22" measuredH="33" zOrder="0" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>0</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::SubTitle" x="253" y="0" w="-1" h="-1" measuredW="77" measuredH="33" zOrder="3" locked="false" isInGroup="37">
+          <controlProperties>
+            <text>0.00%u20AC</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="38" controlTypeID="__group__" x="445" y="320" w="330" h="67" measuredW="330" measuredH="67" zOrder="7" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="2" y="2" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="0" locked="false" isInGroup="38">
+          <controlProperties>
+            <icon>HandClosedIcon%7Csmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="46" y="5" w="-1" h="-1" measuredW="101" measuredH="21" zOrder="1" locked="false" isInGroup="38">
+          <controlProperties>
+            <text>tomatoes%200.50%u20AC</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="__group__" x="178" y="0" w="32" h="33" measuredW="32" measuredH="33" zOrder="2" locked="false" isInGroup="38">
+          <groupChildrenDescriptors>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="0" w="-1" h="-1" measuredW="32" measuredH="33" zOrder="0" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>10</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::SubTitle" x="255" y="0" w="-1" h="-1" measuredW="75" measuredH="33" zOrder="3" locked="false" isInGroup="38">
+          <controlProperties>
+            <text>5.00%u20AC</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::CheckBox" x="0" y="45" w="-1" h="-1" measuredW="228" measuredH="22" zOrder="4" locked="false" isInGroup="38">
+          <controlProperties>
+            <state>selected</state>
+            <text>Bring%20me%20the%20order%20to%20this%20address%3A</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::SubTitle" x="700" y="354" w="-1" h="-1" measuredW="75" measuredH="33" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3.00%u20AC</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::SubTitle" x="578" y="452" w="-1" h="-1" measuredW="95" measuredH="26" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Total%20order</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::SubTitle" x="685" y="449" w="-1" h="-1" measuredW="86" measuredH="33" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>12.50%u20AC</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::TextArea" x="482" y="391" w="193" h="58" measuredW="200" measuredH="140" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Mi%20address</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::SubTitle" x="427" y="493" w="-1" h="-1" measuredW="421" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>13</size>
+        <text>The%20producer%20will%20contact%20you%20to%20make%20an%20appointment%20for%20the%20delivery</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Tooltip" x="939" y="157" w="119" h="89" measuredW="119" measuredH="0" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>An%20email%20has%20been%20sent%20to%20the%20Producer</text>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::Tooltip" x="939" y="260" w="119" h="89" measuredW="125" measuredH="0" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>An%20email%20has%20been%20sent%20to%20the%20Consumer</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
