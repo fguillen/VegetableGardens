@@ -60,9 +60,19 @@
 <body onload="mapInitialize()">
   <div id="wrapper" class="container">
     <div id="header">
-      <h1>Vegetable Gardens</h1>
-      <h2>eating extremely local</h2>
+      <div class="logo">
+        <img src="./assets/images/vegetable_trans.png" width="80">
+      </div>
+      <div class="titles">
+        <h1>Vegetable Gardens</h1>
+        <h2>eating extremely local</h2>
+      </div>
+      <div id="login-button">
+        <button class="btn btn-primary btn-large">I have a Vegetable Garden</button>
+      </div>
     </div>
+
+    <div class="clear"></div>
 
     <div id="vg-description">
       The channel between small vegetable garden horticulist and their neigbors those
@@ -75,7 +85,7 @@
           <form class="form-inline">
             Search Vegetable Gardens close to
             <input type="text" class="input-medium" placeholder="town" name="town" />
-            <button class="btn btn-primary">
+            <button class="btn btn-primary btn-large">
              <i class="icon-search icon-white"></i>
               search
             </button>
@@ -88,7 +98,7 @@
           </div>
 
           <div id="results" class="">
-            <h5>Showing all Vegetable Gardens</h5>
+            <h5>List of all Vegetable Gardens</h5>
 
             <div class="item-card row">
               <div class="item-image span1">

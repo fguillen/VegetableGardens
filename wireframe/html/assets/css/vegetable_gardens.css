@@ -15,8 +15,25 @@ body {
     background-color: #fff;
 }
 
+.clear {
+  clear: both;
+}
+
 
 /**** HEADER ****/
+
+#wrapper > #header .logo,
+#wrapper > #header .titles {
+  float: left;
+}
+
+#wrapper > #header .titles {
+  margin-left: 20px;
+}
+
+#wrapper > #header #login-button {
+  float: right;
+}
 
 h1{
   font-size: 40px;
