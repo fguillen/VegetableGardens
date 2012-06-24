@@ -1,0 +1,130 @@
+/* COLORS
+
+black:        060000
+pink:         ff9dfb
+gray-green:   c1c98d
+blue:         355b70
+crema:        ffeabb
+brown:        8c5514
+red:          e84911
+green:        c6b148
+
+*/
+body {
+  font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+
+/**** HEADER ****/
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  margin-top: -8px;
+  font-size: 20px;
+}
+
+#vg-description {
+  margin: 20px 0;
+  font-size: 20px;
+
+}
+
+
+#wrapper {
+  /*border-left: 1px solid gray;
+  border-right: 1px solid gray;*/
+  padding: 20px;
+}
+
+/***** HOME *****/
+#search #map,
+#search #results {
+  height: 400px;
+  overflow: auto;
+}
+
+#search #results {
+  width: 305px;
+  margin-left: 5px;
+  float: left;
+}
+
+#search {
+  border-sizing: content-box;
+  margin-top: 20px;
+  background-color: #ccc;
+  border: 5px solid #666;
+}
+
+#search #header {
+  padding: 10px;
+  font-size: 30px;
+  background-color: #666;
+  color: white;
+}
+
+#search #header form {
+  margin: 0;
+}
+
+#search #header input {
+  font-size: 30px;
+  height: 35px;
+}
+
+#search #results .item-card {
+  margin-bottom: 15px;
+  background-color: #ddd;
+}
+
+#search #results .item-contact a {
+  color: black;
+}
+
+#search #results .item-contact {
+  text-align: right;
+  padding: 5px;
+
+  font-size: 10px;
+  line-height: 12px;
+}
+
+#tutorial {
+  margin-top: 20px;
+}
+
+#tutorial .tutorial-text {
+  font-size: 18px;
+}
+
+/***** FOOTER *****/
+
+#footer {
+  margin-top: 20px;
+  padding: 10px 0 20px 0;
+  background-color: #aaa;
+  color: white;
+}
+
+#footer h4{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer ul {
+  margin: 0;
+  list-style: none;
+}
+
+#footer .footer-menu {
+  text-align: center;
+}
