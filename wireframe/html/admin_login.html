@@ -1,0 +1,145 @@
+<html>
+<head>
+  <title>Vegetable Gardens</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./assets/css/vegetable_gardens.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script>
+
+    var map_styles =
+      [
+        {
+          stylers: [
+            { saturation: -100 },
+            { gamma: 0.36 },
+            { visibility: "on" }
+          ]
+        }
+      ]
+
+    function mapInitialize() {
+      var myLatlng = new google.maps.LatLng(39.755241,2.884598);
+      var myOptions = {
+        zoom: 10,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: map_styles
+      }
+      var map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title:"My Vegetable Garden 1"
+      });
+
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(39.753657,2.910004),
+          map: map,
+          title:"My Vegetable Garden 2"
+      });
+
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(39.736762,2.93335),
+          map: map,
+          title:"My Vegetable Garden 3"
+      });
+
+
+    }
+  </script>
+
+</head>
+<body onload="mapInitialize()">
+  <div id="wrapper" class="container">
+    <div id="header">
+      <div class="logo">
+        <img src="./assets/images/vegetable_trans.png" width="80">
+      </div>
+      <div class="titles">
+        <h1><a href="./home.html">Vegetable Gardens</a></h1>
+        <h2>eating extremely local</h2>
+      </div>
+      <div id="login-button">
+        Admin section
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="content" class="login row">
+      <div id="login-signin" class="span5 login-box">
+        <h4>Access to your garden</h4>
+        <form>
+          <label class="big">Email</label>
+          <input type="text" class="span3 big">
+
+          <label class="big">Password</label>
+          <input type="text" class="span3 big">
+
+          <label class="checkbox">
+            <input type="checkbox"> Remember me
+          </label>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+
+      <div id="login-or" class="span2">
+        or
+      </div>
+
+      <div id="login-signup" class="span5 login-box">
+        <h4>Register your garden</h4>
+        <p>
+          <a href="#">
+            Fill the form to start selling Vegetables
+            from your Garden to your Neighbors
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="row">
+        <div class="footer-menu span4">
+          <h4>FAQs</h4>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">How to register your Vegetable Garden </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu span4">
+          <h4>Technical information</h4>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">How to register your Vegetable Garden </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu span4">
+          <h4>Our Friends</h4>
+          <ul>
+            <li><a href="#">Wadus wadus</a></li>
+            <li><a href="#">Wadus wadus</a></li>
+            <li><a href="#">Wadus wadus</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+
+</body>
+</html>

@@ -28,11 +28,15 @@ body {
 }
 
 #wrapper > #header .titles {
-  margin-left: 20px;
+  margin: 0px 0px 20px 20px;
 }
 
 #wrapper > #header #login-button {
   float: right;
+}
+
+#wrapper > #header a {
+  color: black;
 }
 
 h1{
@@ -45,7 +49,6 @@ h2{
 }
 
 #vg-description {
-  margin: 20px 0;
   font-size: 20px;
 
 }
@@ -55,6 +58,11 @@ h2{
   /*border-left: 1px solid gray;
   border-right: 1px solid gray;*/
   padding: 20px;
+}
+
+/**** CONTENT ****/
+#content {
+  min-height: 500px;
 }
 
 /***** HOME *****/
@@ -144,4 +152,33 @@ h2{
 
 #footer .footer-menu {
   text-align: center;
+}
+
+/**** LOGIN ****/
+
+.login-box h4 {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+.login-box {
+  box-sizing: border-box;
+  background-color: #eee;
+  padding: 20px;
+}
+
+.login-box label.big,
+.login-box input.big {
+  font-size: 20px;
+}
+
+.login-box input.big {
+  height: 30px;
+}
+
+#login-or {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
