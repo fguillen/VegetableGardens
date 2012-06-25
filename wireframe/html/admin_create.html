@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Vegetable Gardens | Register Vegetable Garden</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./assets/css/vegetable_gardens.css" rel="stylesheet">
+  <script src="./assets/js/jquery.js"></script>
+</head>
+
+<body>
+  <div id="wrapper" class="container">
+    <div id="header">
+      <div class="logo">
+        <img src="./assets/images/vegetable_trans.png" width="80">
+      </div>
+      <div class="titles">
+        <h1><a href="./home.html">Vegetable Gardens</a></h1>
+        <h2>eating extremely local</h2>
+      </div>
+      <div id="login-button" class="admin-section">
+        Admin section
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="page-text">
+      Please fill all the fields of this form to describe your Garden.
+    </div>
+
+    <div id="content" class="admin-create row">
+      <form>
+        <div id="picture" class="span5">
+          <img src="./assets/images/no_pic_380.jpg" />
+        </div>
+
+        <div id="details" class="span7">
+
+          <label class="medium">Choose a name for your Garden</label>
+          <input type="text" class="span4" placeholder="Name of the Garden">
+          <span class="help-block">If it already has a name use it, if doesn't you can use any name you want, the town, a number, your granpa name, ...</span>
+
+          <label class="medium">Tell us an small history of your Garden</label>
+          <textarea class="span6" id="textarea" rows="10"></textarea>
+          <span class="help-block">You can describe your system, the size of your Garden, why your tomates are the best, ...</span>
+
+          <fieldset>
+            <legend>Contact Info</legend>
+            <p class="explanation">
+              If the customer wants to contact you
+              he can use this info:
+            </p>
+
+            <label class="medium">The name of the responsible</label>
+            <input type="text" class="span4">
+
+            <label class="medium">Email</label>
+            <input type="text" class="span4">
+
+            <label class="medium">Phone</label>
+            <input type="text" class="span3">
+          </fieldset>
+
+          <fieldset>
+            <legend>The password</legend>
+            <p class="explanation">
+              Choose a secret password to access
+              to your administration panel.
+            </p>
+
+            <label class="medium">Password</label>
+            <input type="text" class="span3">
+
+            <label class="medium">Confirm the Password</label>
+            <input type="text" class="span3">
+
+            <span class="help-block">We are asking for the password twice to check that you have written it properly</span>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery Offer</legend>
+            <p class="explanation">
+              You can offer to delivery the orders of your neighbors
+              to their home for an extra.
+            </p>
+
+            <label class="checkbox medium">
+              <input type="checkbox" id="delivery-check"> Yes, I want to offer delivery to my neighbors
+            </label>
+
+            <div id="delivery-controls" style="display:none">
+              <label class="medium">Select the towns you can delivery to:</label>
+              <ul>
+                <li>Binissalem <a href="#">remove</a></li>
+                <li>Inca <a href="#">remove</a></li>
+              </ul>
+
+              <div class="input-append">
+                <input class="span3" type="text" placeholder="town"><button class="btn" type="button">Add</button>
+              </div>
+
+              <label class="medium">And to which price:</label>
+              <div class="input-append">
+                <input class="span1" type="text"><span class="add-on"> €</span>
+              </div>
+              <span class="help-block">
+                There is only one price for any of your chosen towns because we want you to
+                only offer deliveries to very close towns, due we are trying to motivate
+                for the local consumption, minimizing the transport.
+              </span>
+
+            </div>
+          </fieldset>
+
+
+
+          <button type="submit" class="btn" id="submit-button">Register your Vegetable Garden with this info</button>
+        </div><!-- details -->
+      </form>
+
+    </div>
+
+    <footer id="footer">
+      <div class="row">
+        <div class="footer-menu span4">
+          <h4>FAQs</h4>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">How to register your Vegetable Garden </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu span4">
+          <h4>Technical information</h4>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">How to register your Vegetable Garden </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu span4">
+          <h4>Our Friends</h4>
+          <ul>
+            <li><a href="#">Wadus wadus</a></li>
+            <li><a href="#">Wadus wadus</a></li>
+            <li><a href="#">Wadus wadus</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    $('#delivery-check').change(function () {
+      if ($(this).attr("checked")) {
+        $("#delivery-controls").slideDown("fast");
+      } else {
+        $("#delivery-controls").slideUp("fast");
+      }
+    });
+  </script>
+
+
+</body>
+</html>

@@ -1,6 +1,8 @@
+<!DOCTYPE html>
+
 <html>
 <head>
-  <title>Vegetable Gardens</title>
+  <title>Vegetable Gardens | Login</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,54 +12,8 @@
   <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="./assets/css/vegetable_gardens.css" rel="stylesheet">
 
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-  <script>
-
-    var map_styles =
-      [
-        {
-          stylers: [
-            { saturation: -100 },
-            { gamma: 0.36 },
-            { visibility: "on" }
-          ]
-        }
-      ]
-
-    function mapInitialize() {
-      var myLatlng = new google.maps.LatLng(39.755241,2.884598);
-      var myOptions = {
-        zoom: 10,
-        center: myLatlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: map_styles
-      }
-      var map = new google.maps.Map(document.getElementById("map"), myOptions);
-
-      var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title:"My Vegetable Garden 1"
-      });
-
-      var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(39.753657,2.910004),
-          map: map,
-          title:"My Vegetable Garden 2"
-      });
-
-      var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(39.736762,2.93335),
-          map: map,
-          title:"My Vegetable Garden 3"
-      });
-
-
-    }
-  </script>
-
 </head>
-<body onload="mapInitialize()">
+<body>
   <div id="wrapper" class="container">
     <div id="header">
       <div class="logo">
@@ -67,12 +23,18 @@
         <h1><a href="./home.html">Vegetable Gardens</a></h1>
         <h2>eating extremely local</h2>
       </div>
-      <div id="login-button">
+      <div id="login-button" class="admin-section">
         Admin section
       </div>
     </div>
 
     <div class="clear"></div>
+
+    <div id="page-text">
+      You can use your email and your password to access to
+      your Vegetable Garden page, or register you Vegetable Garden
+      by first time.
+    </div>
 
     <div id="content" class="login row">
       <div id="login-signin" class="span5 login-box">
@@ -98,7 +60,7 @@
       <div id="login-signup" class="span5 login-box">
         <h4>Register your garden</h4>
         <p>
-          <a href="#">
+          <a href="./admin_create.html">
             Fill the form to start selling Vegetables
             from your Garden to your Neighbors
           </a>

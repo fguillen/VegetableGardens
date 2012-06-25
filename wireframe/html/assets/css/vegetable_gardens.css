@@ -19,6 +19,32 @@ body {
   clear: both;
 }
 
+/**** FORMS ****/
+fieldset {
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 10px;
+}
+
+legend {
+  color: #aaa;
+  width: auto;
+  padding: 0 10px;
+  background-color: #eee;
+}
+
+label.big,
+input.big {
+  font-size: 20px;
+}
+
+input.big {
+  height: 30px;
+}
+
+label.medium {
+  font-size: 16px;
+}
 
 /**** HEADER ****/
 
@@ -35,7 +61,7 @@ body {
   float: right;
 }
 
-#wrapper > #header a {
+#wrapper > #header .titles a {
   color: black;
 }
 
@@ -48,8 +74,9 @@ h2{
   font-size: 20px;
 }
 
-#vg-description {
+#page-text {
   font-size: 20px;
+  margin-bottom: 20px;
 
 }
 
@@ -167,18 +194,17 @@ h2{
   padding: 20px;
 }
 
-.login-box label.big,
-.login-box input.big {
-  font-size: 20px;
-}
 
-.login-box input.big {
-  height: 30px;
-}
 
 #login-or {
   text-align: center;
   padding-top: 20px;
   font-weight: bold;
   font-size: 20px;
+}
+
+/***** ADMIN CREATE *****/
+
+.admin-create #submit-button {
+  margin-top: 20px;
 }
