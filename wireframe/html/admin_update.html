@@ -12,6 +12,7 @@
   <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="./assets/css/vegetable_gardens.css" rel="stylesheet">
   <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/vegetable_gardens.js"></script>
 </head>
 
 <body>
@@ -31,14 +32,33 @@
 
     <div class="clear"></div>
 
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Admin section</a>
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li><a href="./admin_orders.html">My Orders</a></li>
+              <li><a href="./admin_products_week.html">Products this week</a></li>
+              <li class="active"><a href="./admin_update.html">Config</a></li>
+            </ul>
+          </div><!-- /.nav-collapse -->
+        </div>
+      </div><!-- /navbar-inner -->
+    </div>
+
+    <div id="config-update" class="alert alert-success" style="display:none">
+      Your Vegetable Garden info has been updated!
+    </div>
+    <script>
+      if( $.urlParam('config-update') ) $("#config-update").show();
+    </script>
+
     <div id="page-text">
       Here you can modify the info details of your Vegetable Garden's page
     </div>
 
     <div id="content" class="admin-create row">
-      <div id="alert" class="notice">
-        Your Vegetable Garden has been registered correctly.
-      </div>
 
       <form>
         <div id="picture" class="span5">
@@ -87,23 +107,23 @@ In 1943, the Roosevelts planted a "victory garden" on the White House grounds.  
             <div id="delivery-controls">
               <label class="medium">List of Towns for Delivery</label>
               <ul>
-                <li>Binissalem <a href="#">remove</a></li>
-                <li>Inca <a href="#">remove</a></li>
+                <li>Binissalem <a href="javascript: alert('does no work yet');">remove</a></li>
+                <li>Inca <a href="javascript: alert('does no work yet');">remove</a></li>
               </ul>
 
               <div class="input-append">
-                <input class="span3" type="text" placeholder="town"><button class="btn" type="button">Add</button>
+                <input class="span3" type="text" placeholder="town"><a class="btn" type="button" href="javascript: alert('does no work yet');">Add</a>
               </div>
 
               <label class="medium">Delivery Price:</label>
               <div class="input-append">
-                <input style="width: 26px; text-align: right" type="text" value="3"><span style="width: 5px; padding-left: 0; padding-right: 0;" class="add-on">.</span><input style="width: 16px; margin-left: -1px" type="text" value="50"><span class="add-on"> €</span>
+                <input type="text" value="2.00" class="input-mini"><span class="add-on">€</span>
               </div>
 
             </div>
           </fieldset>
 
-          <button type="submit" class="btn" id="submit-button">Update the info of your Vegetable Garden</button>
+          <a type="submit" href="./admin_update.html?config-update=true" class="btn" id="submit-button">Update the info of your Vegetable Garden</a>
         </div><!-- details -->
       </form>
 

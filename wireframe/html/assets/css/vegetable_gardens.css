@@ -211,12 +211,20 @@ h2{
 
 /***** PRODCTUS WEEK *****/
 
+#my-products tr:hover td {
+  background-color: #ccc;
+}
+
 #my-products tr td {
-  background-color: orange;
+  background-color: #ddd;
 }
 
 #my-products tr.no-activated td {
   background-color: white;
+}
+
+#my-products tr:hover.no-activated td {
+  background-color: #eee;
 }
 
 #my-products tr.no-activated .product-controls .icon-minus {

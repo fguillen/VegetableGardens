@@ -13,7 +13,6 @@
   <link href="./assets/css/vegetable_gardens.css" rel="stylesheet">
   <script src="./assets/js/jquery.js"></script>
   <script src="./bootstrap/js/bootstrap.js"></script>
-  <script src="./assets/js/vegetable_gardens.js"></script>
 </head>
 
 <body>
@@ -47,20 +46,10 @@
       </div><!-- /navbar-inner -->
     </div>
 
-    <div id="recent-creation-alert" class="alert alert-success" style="display:none">
+    <div class="alert alert-success">
       Your Vegetable Garden has been registered correctly. Now you can start offering your products to
-      your neighbors.
+      your neighbors, just create a list of your available products and their price.
     </div>
-    <script>
-      if( $.urlParam('recent-creation') ) $("#recent-creation-alert").show();
-    </script>
-
-    <div id="products-week-update" class="alert alert-success" style="display:none">
-      Your available products list has been updated.
-    </div>
-    <script>
-      if( $.urlParam('products-week-update') ) $("#products-week-update").show();
-    </script>
 
     <div id="page-text">
       For this week I have
@@ -194,7 +183,7 @@
         </table>
 
         <div class="span8" style="text-align: right;">
-          <a class="btn btn-primary" href="./admin_products_week.html?products-week-update=true">Update your available products</a>
+          <button class="btn btn-primary" href="#">Update your available products</button>
         </div>
       </div> <!-- my-products -->
 
