@@ -32,72 +32,60 @@
     <div class="clear"></div>
 
     <div id="page-text">
-      Please fill all the fields of this form to describe your Garden.
+      Here you can modify the info details of your Vegetable Garden's page
     </div>
 
     <div id="content" class="admin-create row">
+      <div id="alert" class="notice">
+        Your Vegetable Garden has been registered correctly.
+      </div>
+
       <form>
         <div id="picture" class="span5">
-          <img src="./assets/images/no_pic_380.jpg" />
+          <img src="./assets/images/garden_380.jpg" />
         </div>
 
         <div id="details" class="span7">
 
-          <label class="medium">Choose a name for your Garden</label>
-          <input type="text" class="span4" placeholder="Name of the Garden">
-          <span class="help-block">If it already has a name use it, if doesn't you can use any name you want, the town, a number, your granpa name, ...</span>
+          <label class="medium">Garden's Name</label>
+          <input type="text" class="span4" value="My Garden 1">
 
-          <label class="medium">Tell us an small history of your Garden</label>
-          <textarea class="span6" id="textarea" rows="10"></textarea>
-          <span class="help-block">You can describe your system, the size of your Garden, why your tomates are the best, ...</span>
+          <label class="medium">Garden's History</label>
+          <textarea class="span6" id="textarea" rows="10">During the first half of the 20th century, much of the world was at war.
+
+Because war is so resource-intensive, many countries asked their citizens to pitch in and contribute.  Even our presidents did their part.  In 1918, President Woodrow Wilson and First Lady Edith Wilson brought sheep to graze and fertilize the White House lawns in an effort to save manpower, fuel, and chemicals, so they could instead be used in the war.
+In 1943, the Roosevelts planted a "victory garden" on the White House grounds.  A victory garden was a private or community vegetable garden, either in a backyard or public area, where people could grow food for their families and communities. This was done in order to reduce demands on the country’s resources. </textarea>
 
           <fieldset>
             <legend>Contact Info</legend>
-            <p class="explanation">
-              If the customer wants to contact you
-              he can use this info:
-            </p>
 
             <label class="medium">The name of the responsible</label>
-            <input type="text" class="span4">
+            <input type="text" class="span4" value="Juan Pedro">
 
             <label class="medium">Email</label>
-            <input type="text" class="span4">
+            <input type="text" class="span4" value="juan@email.com">
 
             <label class="medium">Phone</label>
-            <input type="text" class="span3">
+            <input type="text" class="span3" value="971 111 111">
           </fieldset>
 
           <fieldset>
-            <legend>The password</legend>
-            <p class="explanation">
-              Choose a secret password to access
-              to your administration panel.
-            </p>
-
-            <label class="medium">Password</label>
+            <legend>Change the Password</legend>
+            <label class="medium">New Password</label>
             <input type="text" class="span3">
 
-            <label class="medium">Confirm the Password</label>
+            <label class="medium">Confirm the New Password</label>
             <input type="text" class="span3">
-
-            <span class="help-block">We are asking for the password twice to check that you have written it properly</span>
-
           </fieldset>
 
           <fieldset>
             <legend>Delivery Offer</legend>
-            <p class="explanation">
-              You can offer to delivery the orders of your neighbors
-              to their home for an extra.
-            </p>
-
             <label class="checkbox medium">
-              <input type="checkbox" id="delivery-check"> Yes, I want to offer delivery to my neighbors
+              <input type="checkbox" id="delivery-check" checked="true"> Yes, I want to offer delivery to my neighbors
             </label>
 
-            <div id="delivery-controls" style="display:none">
-              <label class="medium">Select the towns you can delivery to:</label>
+            <div id="delivery-controls">
+              <label class="medium">List of Towns for Delivery</label>
               <ul>
                 <li>Binissalem <a href="#">remove</a></li>
                 <li>Inca <a href="#">remove</a></li>
@@ -107,22 +95,15 @@
                 <input class="span3" type="text" placeholder="town"><button class="btn" type="button">Add</button>
               </div>
 
-              <label class="medium">And to which price:</label>
+              <label class="medium">Delivery Price:</label>
               <div class="input-append">
-                <input class="span1" type="text"><span class="add-on"> €</span>
+                <input style="width: 26px; text-align: right" type="text" value="3"><span style="width: 5px; padding-left: 0; padding-right: 0;" class="add-on">.</span><input style="width: 16px; margin-left: -1px" type="text" value="50"><span class="add-on"> €</span>
               </div>
-              <span class="help-block">
-                There is only one price for any of your chosen towns because we want you to
-                only offer deliveries to very close towns, due we are trying to motivate
-                for the local consumption, minimizing the transport.
-              </span>
 
             </div>
           </fieldset>
 
-
-
-          <a href="./admin_update.html" class="btn" id="submit-button">Register your Vegetable Garden with this info</a>
+          <button type="submit" class="btn" id="submit-button">Update the info of your Vegetable Garden</button>
         </div><!-- details -->
       </form>
 

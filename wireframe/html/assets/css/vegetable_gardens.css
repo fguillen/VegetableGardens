@@ -208,3 +208,62 @@ h2{
 .admin-create #submit-button {
   margin-top: 20px;
 }
+
+/***** PRODCTUS WEEK *****/
+
+#my-products tr td {
+  background-color: orange;
+}
+
+#my-products tr.no-activated td {
+  background-color: white;
+}
+
+#my-products tr.no-activated .product-controls .icon-minus {
+  display: none;
+}
+
+#my-products tr.no-activated .product-price > div {
+  display: none;
+}
+
+.product-icon {
+  padding: 2px !important;
+  width: 9%;
+}
+
+
+.product-name {
+  font-size: 30px;
+  vertical-align: middle !important;
+  width: 31%;
+}
+
+.product-price {
+  width: 20%;
+}
+
+.product-controls {
+  width: 20%;
+}
+
+.product-remove {
+  width: 20%;
+}
+
+.product-icon img {
+}
+
+.product-price input {
+  width: 56px;
+  text-align: right;
+  font-size: 20px;
+}
+
+.product-controls input {
+  width: 46px;
+  text-align: right;
+  font-size: 20px;
+}
+
+
