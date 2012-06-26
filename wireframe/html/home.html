@@ -77,6 +77,13 @@
 
     <div class="clear"></div>
 
+    <div id="logout-alert" class="alert alert-success" style="display:none">
+      Your session has been closed
+    </div>
+    <script>
+      if( $.urlParam('logout') ) $("#logout-alert").show();
+    </script>
+
     <h3>
       The channel between small vegetable garden horticulist and their neigbors those
       are interested in healthy, testy and local products.
@@ -105,7 +112,7 @@
           </div>
 
           <div id="results" class="">
-            <div id="list-all" style="display:none">
+            <div id="list-all">
               <h5>List of all Vegetable Gardens</h5>
             </div>
             <script>
@@ -117,6 +124,7 @@
             </div>
             <script>
               if( $.urlParam('town') ) {
+                $("#list-all").hide();
                 $("#list-town").show();
                 $("#list-town strong").html( $.urlParam('town') );
               }

@@ -405,8 +405,21 @@ vertical-align: middle !important;
 
 /***** ORDER CONFIRM *****/
 
-#personal-info {
+#personal-info,
+#personal-info-success {
   background-color: #eee;
   padding: 10px;
   margin-bottom: 20px;
+}
+
+/***** ORDER CONFIRM SUCCESS ****/
+#personal-info-success label {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: -1px;
+}
+
+#personal-info-success p {
+  font-size: 20px;
+  font-weight: bold;
 }

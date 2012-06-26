@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <title>Vegetable Gardens | Order Detail</title>
+  <title>Vegetable Gardens | Order Confirmed</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,48 +26,24 @@
         <h1><a href="./home.html">Vegetable Gardens</a></h1>
         <h2>eating extremely local</h2>
       </div>
-      <div id="login-button" class="admin-section">
+      <div id="login-button">
+        <a href="./admin_login.html" class="btn btn-primary btn-large">I have a Vegetable Garden</a>
       </div>
     </div>
 
     <div class="clear"></div>
 
-
-    <div id="state-update" class="alert alert-success" style="display:none">
-      The State of the Order has been updated and the Customer has been informed
-    </div>
-    <script>
-      if( $.urlParam('state-update') ) $("#state-update").show();
-    </script>
-
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="#">Admin section</a>
-          <div class="nav-collapse">
-            <ul class="nav pull-right">
-              <li class="active"><a href="./admin_orders.html">My Orders</a></li>
-              <li><a href="./admin_products_week.html">Products this week</a></li>
-              <li><a href="./admin_update.html">Config</a></li>
-              <li><a href="./home.html?logout=true">Logout</a></li>
-            </ul>
-          </div><!-- /.nav-collapse -->
-        </div>
-      </div><!-- /navbar-inner -->
+    <div id="config-update" class="alert alert-success">
+      Your Order has been confirmed and the owner of the Vegetable Garden has been informed.
     </div>
 
 
-    <h3>Order detailed info</h3>
+    <h3>Order <strong style="font-size: 24px">#AAE12</strong> Confirmed!</h3>
 
     <div id="content" class="admin-order row">
 
 
       <div id="order-detail" class="span9">
-        <div id="customer-info">
-          Paquito el chocolatero <br />
-          971 333 444 <br />
-          paquito@email.com <br />
-        </div>
 
         <table class="table">
           <tr class="row span9">
@@ -96,11 +72,7 @@
 
           <tr class="delivery">
             <td class="product-name" colspan="5" class="medium-text">
-              <i class="icon-ok"></i> Delivery to the customer's house
-              <div class="address">
-                c/ Juan Palomero 34 <br />
-                Binissalem
-              </div>
+              <i class="icon-ok"></i> Delivery to my house
             </td>
             <td class="product-total big-text">3.00€</td>
           </tr>
@@ -114,41 +86,28 @@
         </table>
 
 
-        <h3>State</h3>
+        <h3>Your Personal Info</h3>
 
-        <div id="order-state">
-          <i class="icon-exclamation-sign"></i><strong>Pending</strong>
-          <div id="order-state-controls">
-            <label class="checkbox">
-              <input type="checkbox" value="option1"> Mark this order as <strong>Ready</strong>
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" id="inlineCheckbox3" value="option3"> Inform the customer the Order is ready
-            </label>
-          </div>
+        <div id="personal-info-success">
+            <label class="medium">Name</label>
+            <p>Pedro García</p>
 
-          <br />
-          <a class="btn btn-primary" href="./admin_order.html?state-update=true">Update the Order State</a>
+            <label class="medium">Email</label>
+            <p>mi@email.com</p>
+
+            <label class="medium">Phone</label>
+            <p>971 222 333</p>
+
+
+            <label class="medium">The Order will be delivered to</label>
+            <p>c/ Goleta 36 <br />
+              Binissalem</p>
         </div>
+
 
       </div> <!-- order-detail -->
 
       <div id="instructions" class="span3">
-        <p>
-          Here you can see the detailed info of this Order
-        </p>
-
-        <p>
-          Check the products, prepare the order and mark this order as
-          <strong>Ready</strong>, check the <strong>State</strong> section on the bottom.
-        </p>
-
-        <p>
-          When you mark an Order as <strong>Ready</strong> you can
-          ask the system to send an email to the customer, to do so just
-          check the option <i>Inform the customer the Order is ready</i>.
-        </p>
-
       </div>
 
     </div>

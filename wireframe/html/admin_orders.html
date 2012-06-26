@@ -12,6 +12,8 @@
   <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="./assets/css/vegetable_gardens.css" rel="stylesheet">
   <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/vegetable_gardens.js"></script>
+
   <script src="./bootstrap/js/bootstrap.js"></script>
 </head>
 
@@ -40,11 +42,19 @@
               <li class="active"><a href="./admin_orders.html">My Orders</a></li>
               <li><a href="./admin_products_week.html">Products this week</a></li>
               <li><a href="./admin_update.html">Config</a></li>
+              <li><a href="./home.html?logout=true">Logout</a></li>
             </ul>
           </div><!-- /.nav-collapse -->
         </div>
       </div><!-- /navbar-inner -->
     </div>
+
+    <div id="login-alert" class="alert alert-success" style="display:none">
+      Email and Password accepted you are now in the administration panel of your Vegetable Garden
+    </div>
+    <script>
+      if( $.urlParam('login') ) $("#login-alert").show();
+    </script>
 
     <h3>Here you can check all your history orders</h3>
 
