@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Vegetable Gardens | Order Detail</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./assets/css/vegetable_gardens.css" rel="stylesheet">
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./bootstrap/js/bootstrap.js"></script>
+  <script src="./assets/js/vegetable_gardens.js"></script>
+</head>
+
+<body>
+  <div id="wrapper" class="container">
+    <div id="header">
+      <div class="logo">
+        <img src="./assets/images/vegetable_trans.png" width="80">
+      </div>
+      <div class="titles">
+        <h1><a href="./home.html">Vegetable Gardens</a></h1>
+        <h2>eating extremely local</h2>
+      </div>
+      <div id="login-button" class="admin-section">
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+
+    <div id="state-update" class="alert alert-success" style="display:none">
+      The State of the Order has been updated and the Customer has been informed
+    </div>
+    <script>
+      if( $.urlParam('state-update') ) $("#state-update").show();
+    </script>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Admin section</a>
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li class="active"><a href="./admin_orders.html">My Orders</a></li>
+              <li><a href="./admin_products_week.html">Products this week</a></li>
+              <li><a href="./admin_update.html">Config</a></li>
+            </ul>
+          </div><!-- /.nav-collapse -->
+        </div>
+      </div><!-- /navbar-inner -->
+    </div>
+
+
+    <h3>Order detailed info</h3>
+
+    <div id="content" class="admin-order row">
+
+
+      <div id="order-detail" class="span9">
+        <div id="customer-info">
+          Paquito el chocolatero <br />
+          971 333 444 <br />
+          paquito@email.com <br />
+        </div>
+
+        <table class="table">
+          <tr class="row span9">
+            <td class="product-icon"><img src="./assets/images/eggplant.jpg"></td>
+            <td class="product-name">eggplant</td>
+            <td class="product-price big-text">3.50€</td>
+            <td class="product-controls big-text">3</td>
+            <td class="product-total big-text">10.50€</td>
+          </tr>
+
+          <tr class="row span9">
+            <td class="product-icon"><img src="./assets/images/garlic.jpg"></td>
+            <td class="product-name">garlic</td>
+            <td class="product-price big-text">0.50€</td>
+            <td class="product-controls big-text">10</td>
+            <td class="product-total big-text">5.00€</td>
+          </tr>
+
+          <tr class="row span9">
+            <td class="product-icon"><img src="./assets/images/carrot.jpg"></td>
+            <td class="product-name">carrot</td>
+            <td class="product-price big-text">0.25€</td>
+            <td class="product-controls big-text">5</td>
+            <td class="product-total big-text">1.25€</td>
+          </tr>
+
+          <tr class="delivery">
+            <td class="product-name" colspan="5" class="medium-text">
+              <i class="icon-ok"></i> Delivery to the customer's house
+              <div class="address">
+                c/ Juan Palomero 34 <br />
+                Binissalem
+              </div>
+            </td>
+            <td class="product-total big-text">3.00€</td>
+          </tr>
+
+          <tr class="total">
+            <td class="product-name" colspan="5" class="medium-text">
+              Total order
+            </td>
+            <td class="product-total big-text">19.75€</td>
+          </tr>
+        </table>
+
+
+        <h3>State</h3>
+
+        <div id="order-state">
+          <i class="icon-exclamation-sign"></i><strong>Pending</strong>
+          <div id="order-state-controls">
+            <label class="checkbox">
+              <input type="checkbox" value="option1"> Mark this order as <strong>Ready</strong>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" id="inlineCheckbox3" value="option3"> Inform the customer the Order is ready
+            </label>
+          </div>
+
+          <br />
+          <a class="btn btn-primary" href="./admin_order.html?state-update=true">Update the Order State</a>
+        </div>
+
+      </div> <!-- order-detail -->
+
+      <div id="instructions" class="span3">
+        <p>
+          Here you can see the detailed info of this Order
+        </p>
+
+        <p>
+          Check the products, prepare the order and mark this order as
+          <strong>Ready</strong>, check the <strong>State</strong> section on the bottom.
+        </p>
+
+        <p>
+          When you mark an Order as <strong>Ready</strong> you can
+          ask the system to send an email to the customer, to do so just
+          check the option <i>Inform the customer the Order is ready</i>.
+        </p>
+
+      </div>
+
+    </div>
+
+    <footer id="footer">
+      <div class="row">
+        <div class="footer-menu span4">
+          <h4>FAQs</h4>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">How to register your Vegetable Garden </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu span4">
+          <h4>Technical information</h4>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">How to register your Vegetable Garden </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu span4">
+          <h4>Our Friends</h4>
+          <ul>
+            <li><a href="#">Wadus wadus</a></li>
+            <li><a href="#">Wadus wadus</a></li>
+            <li><a href="#">Wadus wadus</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    function modifyQuantity( event, quantity ){
+      event.preventDefault();
+
+      var row = $(event.currentTarget).parent().parent().parent();
+      var textField = row.find( ".product-controls input" );
+      var textFieldNewValue = +textField.val() + quantity;
+      textField.val( textFieldNewValue );
+
+      if( textField.val() > 0 ) {
+        row.removeClass("no-activated");
+      } else {
+        textField.val( 0 );
+        row.addClass("no-activated");
+      }
+    }
+
+    $('.add-quantity').click( function( event ) { modifyQuantity( event, 1 ) } );
+    $('.subtract-quantity').click( function( event ) { modifyQuantity( event, -1 ) } );
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Vegetable Gardens | Garden | My Garden 1</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./assets/css/vegetable_gardens.css" rel="stylesheet">
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/vegetable_gardens.js"></script>
+</head>
+
+<body>
+  <div id="wrapper" class="container">
+    <div id="header">
+      <div class="logo">
+        <img src="./assets/images/vegetable_trans.png" width="80">
+      </div>
+      <div class="titles">
+        <h1><a href="./home.html">Vegetable Gardens</a></h1>
+        <h2>eating extremely local</h2>
+      </div>
+      <div id="login-button">
+        <a href="./admin_login.html" class="btn btn-primary btn-large">I have a Vegetable Garden</a>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+
+    <div id="content" class="garden-show">
+
+      <div id="garden-show" class="row">
+
+        <div id="picture" class="span5">
+          <img src="./assets/images/garden_380.jpg" />
+        </div>
+
+        <div id="details" class="span7">
+          <h2 style="margin-top: 0">My Garden 1</h2>
+
+          <div id="garden-history">
+            <p>
+              During the first half of the 20th century, much of the world was at war.
+            </p>
+
+            <p>
+              Because war is so resource-intensive, many countries asked their citizens to pitch in and contribute.  Even our presidents did their part.  In 1918, President Woodrow Wilson and First Lady Edith Wilson brought sheep to graze and fertilize the White House lawns in an effort to save manpower, fuel, and chemicals, so they could instead be used in the war.
+              In 1943, the Roosevelts planted a "victory garden" on the White House grounds.  A victory garden was a private or community vegetable garden, either in a backyard or public area, where people could grow food for their families and communities. This was done in order to reduce demands on the country’s resources. </textarea>
+            </p>
+          </div>
+
+          <div id="garden-contact">
+            <div id="garden-ask-for">Ask for <strong>Juan Pedro</strong></div>
+            <div id="garden-email">juan@email.com</div>
+            <div id="garden-phone">971 111 222</div>
+          </div>
+
+        </div><!-- details -->
+
+      </div> <!-- garden show -->
+
+      <div id="garden-producs">
+        <h3>Make an Order to this Vegetable Garden</h3>
+
+        <table class="table">
+          <tr class="row span9 no-activated" data-price="3.50">
+            <td class="product-icon"><img src="./assets/images/eggplant.jpg"></td>
+            <td class="product-name">eggplant</td>
+            <td class="product-price medium-text">3.50€/unit</td>
+            <td class="product-availability medium-text">10 available</td>
+            <td class="product-controls">
+              <div class="input-prepend input-append">
+                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
+              </div>
+            </td>
+            <td class="product-total medium-text">10.00€</td>
+          </tr>
+
+          <tr class="row span9 no-activated sold-out" data-price="3.50">
+            <td class="product-icon"><img src="./assets/images/garlic.jpg"></td>
+            <td class="product-name">garlic</td>
+            <td class="product-price medium-text">3.50€/unit</td>
+            <td class="product-availability medium-text">Sold out</td>
+            <td class="product-controls">
+              <div class="input-prepend input-append">
+                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
+              </div>
+            </td>
+            <td class="product-total medium-text">10.00€</td>
+          </tr>
+
+          <tr class="row span9 no-activated" data-price="3.50">
+            <td class="product-icon"><img src="./assets/images/carrot.jpg"></td>
+            <td class="product-name">carrot</td>
+            <td class="product-price medium-text">3.50€/unit</td>
+            <td class="product-availability medium-text">10 available</td>
+            <td class="product-controls">
+              <div class="input-prepend input-append">
+                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
+              </div>
+            </td>
+            <td class="product-total medium-text">10.00€</td>
+          </tr>
+
+          <tr class="delivery">
+            <td colspan="3"></td>
+            <td class="product-name" colspan="3" class="medium-text">
+              This Vegetable Garden offers delivery to the towns
+              <strong>Binissalem</strong>, <strong>Soller</strong> and <strong>Inca</strong> by
+              <strong>3.00€</strong>
+              <br /><br />
+              <input type="checkbox"> Please delivery this order to my address
+            </td>
+            <td class="product-total medium-text" style="vertical-align: top !important;">3.00€</td>
+          </tr>
+
+          <tr class="total">
+            <td class="product-name" colspan="6" class="medium-text">
+              Total order
+            </td>
+            <td class="product-total big-text">19.75€</td>
+          </tr>
+
+        </table>
+        <div style="text-align: right">
+          <a class="btn btn-primary" href="./confirm_order.html">Close the Order and go to Fill My Info</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <footer id="footer">
+      <div class="row">
+        <div class="footer-menu span4">
+          <h4>FAQs</h4>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">How to register your Vegetable Garden </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu span4">
+          <h4>Technical information</h4>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">How to register your Vegetable Garden </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu span4">
+          <h4>Our Friends</h4>
+          <ul>
+            <li><a href="#">Wadus wadus</a></li>
+            <li><a href="#">Wadus wadus</a></li>
+            <li><a href="#">Wadus wadus</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    $('#delivery-check').change(function () {
+      if ($(this).attr("checked")) {
+        $("#delivery-controls").slideDown("fast");
+      } else {
+        $("#delivery-controls").slideUp("fast");
+      }
+    });
+  </script>
+
+
+</body>
+</html>

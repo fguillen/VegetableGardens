@@ -37,8 +37,8 @@
           <a class="brand" href="#">Admin section</a>
           <div class="nav-collapse">
             <ul class="nav pull-right">
-              <li><a href="./admin_orders.html">My Orders</a></li>
-              <li class="active"><a href="./admin_products_week.html">Products this week</a></li>
+              <li class="active"><a href="./admin_orders.html">My Orders</a></li>
+              <li><a href="./admin_products_week.html">Products this week</a></li>
               <li><a href="./admin_update.html">Config</a></li>
             </ul>
           </div><!-- /.nav-collapse -->
@@ -46,164 +46,75 @@
       </div><!-- /navbar-inner -->
     </div>
 
-    <div class="alert alert-success">
-      Your Vegetable Garden has been registered correctly. Now you can start offering your products to
-      your neighbors, just create a list of your available products and their price.
-    </div>
+    <h3>Here you can check all your history orders</h3>
 
-    <div id="page-text">
-      For this week I have
-    </div>
+    <div id="content" class="admin-orders row">
+      <div id="my-orders" class="span9">
+        <table class="table table-striped">
 
-    <div id="content" class="admin-products-week row">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Price</th>
+              <th>Delivery</th>
+              <th>State</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paquita Chocolatera</td>
+              <td>2012-06-20</td>
+              <td>15.00€</td>
+              <td><i class="icon-ok"></i></td>
+              <td><i class="icon-exclamation-sign"></i> Pending</td>
+              <td><a href="./admin_order.html">See</a></td>
+            </tr>
 
+            <tr>
+              <td>Juan Bautista</td>
+              <td>2012-06-20</td>
+              <td>5.50€</td>
+              <td></td>
+              <td><i class="icon-exclamation-sign"></i> Pending</td>
+              <td><a href="./admin_order.html">See</a></td>
+            </tr>
 
-      <div id="my-products" class="span9">
-        <table class="table">
-          <tr class="row span9 no-activated">
-            <td class="product-icon"><img src="./assets/images/eggplant.jpg"></td>
-            <td class="product-name">eggplant</td>
-            <td class="product-price">
-              <div class="input-append">
-                <input type="text" value="3.50"><span class="add-on">€</span>
-              </div>
-            </td>
-            <td class="product-controls">
-              <div class="input-prepend input-append">
-                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
-              </div>
-            </td>
-          </tr>
+            <tr>
+              <td>María del Barco</td>
+              <td>2012-06-18</td>
+              <td>11.00€</td>
+              <td><i class="icon-ok"></i></td>
+              <td>Ready</td>
+              <td><a href="./admin_order.html">See</a></td>
+            </tr>
 
-          <tr class="row span9 no-activated">
-            <td class="product-icon"><img src="./assets/images/garlic.jpg"></td>
-            <td class="product-name">garlic</td>
-            <td class="product-price">
-              <div class="input-append">
-                <input type="text" value="0.50"><span class="add-on">€</span>
-              </div>
-            </td>
-            <td class="product-controls">
-              <div class="input-prepend input-append">
-                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
-              </div>
-            </td>
-          </tr>
+            <tr>
+              <td>Teresa Camplos</td>
+              <td>2012-06-10</td>
+              <td>11.10€</td>
+              <td></td>
+              <td>Delivered</td>
+              <td><a href="./admin_order.html">See</a></td>
+            </tr>
 
-          <tr class="row span9 no-activated">
-            <td class="product-icon"><img src="./assets/images/carrot.jpg"></td>
-            <td class="product-name">carrot</td>
-            <td class="product-price">
-              <div class="input-append">
-                <input type="text" value="1.50"><span class="add-on">€</span>
-              </div>
-            </td>
-            <td class="product-controls">
-              <div class="input-prepend input-append">
-                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
-              </div>
-            </td>
-          </tr>
-
-
-          <tr class="row span9 no-activated">
-            <td class="product-icon"><img src="./assets/images/cauliflower.jpg"></td>
-            <td class="product-name">cauliflower</td>
-            <td class="product-price">
-              <div class="input-append">
-                <input type="text" value="1.50"><span class="add-on">€</span>
-              </div>
-            </td>
-            <td class="product-controls">
-              <div class="input-prepend input-append">
-                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
-              </div>
-            </td>
-          </tr>
-
-          <tr class="row span9 no-activated">
-            <td class="product-icon"><img src="./assets/images/chili.jpg"></td>
-            <td class="product-name">chili</td>
-            <td class="product-price">
-              <div class="input-append">
-                <input type="text" value="1.50"><span class="add-on">€</span>
-              </div>
-            </td>
-            <td class="product-controls">
-              <div class="input-prepend input-append">
-                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
-              </div>
-            </td>
-          </tr>
-
-          <tr class="row span9 no-activated">
-            <td class="product-icon"><img src="./assets/images/maize.jpg"></td>
-            <td class="product-name">maize</td>
-            <td class="product-price">
-              <div class="input-append">
-                <input type="text" value="1.50"><span class="add-on">€</span>
-              </div>
-            </td>
-            <td class="product-controls">
-              <div class="input-prepend input-append">
-                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
-              </div>
-            </td>
-          </tr>
-
-          <tr class="row span9 no-activated">
-            <td class="product-icon"><img src="./assets/images/lettuce.jpg"></td>
-            <td class="product-name">lettuce</td>
-            <td class="product-price">
-              <div class="input-append">
-                <input type="text" value="1.50"><span class="add-on">€</span>
-              </div>
-            </td>
-            <td class="product-controls">
-              <div class="input-prepend input-append">
-                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
-              </div>
-            </td>
-          </tr>
-
-          <tr class="row span9 no-activated">
-            <td class="product-icon"><img src="./assets/images/potato.jpg"></td>
-            <td class="product-name">potato</td>
-            <td class="product-price">
-              <div class="input-append">
-                <input type="text" value="1.50"><span class="add-on">€</span>
-              </div>
-            </td>
-            <td class="product-controls">
-              <div class="input-prepend input-append">
-                <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
-              </div>
-            </td>
-          </tr>
+          </tbody>
         </table>
-
-        <div class="span8" style="text-align: right;">
-          <button class="btn btn-primary" href="#">Update your available products</button>
-        </div>
-      </div> <!-- my-products -->
+      </div>
 
       <div id="instructions" class="span3">
         <p>
-          Search from this list the products you can delivery this week.
+          This is a very short view of your orders.
         </p>
 
         <p>
-          Use the <i class="icon-plus"></i> and <i class="icon-minus"></i> buttons
-          to define the exact quantity of this product.
+          To see a detailed info of one of them click in the <strong>See</strong> link.
         </p>
 
         <p>
-          Use the field <span class="add-on">€</span> to indicate the price for an unit.
-        </p>
-
-        <p>
-          If you have products those are not in this list please
-          <a href="#">contact us</a>
+          Put special attention to the orders in <strong>Pending</strong> status, it means
+          you have to prepare the package to be ready when the customer comes for it.
         </p>
       </div>
 
