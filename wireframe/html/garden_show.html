@@ -69,33 +69,33 @@
         <h3>Make an Order to this Vegetable Garden</h3>
 
         <table class="table">
-          <tr class="row span9 no-activated" data-price="3.50">
+          <tr class="row span9 calculate" data-price="1.50" data-availability="10">
             <td class="product-icon"><img src="./assets/images/eggplant.jpg"></td>
             <td class="product-name">eggplant</td>
-            <td class="product-price medium-text">3.50€/unit</td>
+            <td class="product-price medium-text">1.50€/unit</td>
             <td class="product-availability medium-text">10 available</td>
             <td class="product-controls">
               <div class="input-prepend input-append">
                 <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
               </div>
             </td>
-            <td class="product-total medium-text">10.00€</td>
+            <td class="product-total medium-text"><span>0.00</span>€</td>
           </tr>
 
-          <tr class="row span9 no-activated sold-out" data-price="3.50">
+          <tr class="row span9 sold-out" data-price="0.50">
             <td class="product-icon"><img src="./assets/images/garlic.jpg"></td>
             <td class="product-name">garlic</td>
-            <td class="product-price medium-text">3.50€/unit</td>
+            <td class="product-price medium-text">0.50€/unit</td>
             <td class="product-availability medium-text">Sold out</td>
             <td class="product-controls">
               <div class="input-prepend input-append">
                 <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
               </div>
             </td>
-            <td class="product-total medium-text">10.00€</td>
+            <td class="product-total medium-text"><div>0.00€</div></td>
           </tr>
 
-          <tr class="row span9 no-activated" data-price="3.50">
+          <tr class="row span9 calculate" data-price="3.50">
             <td class="product-icon"><img src="./assets/images/carrot.jpg"></td>
             <td class="product-name">carrot</td>
             <td class="product-price medium-text">3.50€/unit</td>
@@ -105,7 +105,7 @@
                 <a class="btn add-on add-quantity" href="#"><i class="icon-plus"></i></a><input value="0" id="appendedPrependedInput" type="text"><a class="btn add-on subtract-quantity" href="#"><i class="icon-minus"></i></a>
               </div>
             </td>
-            <td class="product-total medium-text">10.00€</td>
+            <td class="product-total medium-text"><span>0.00</span>€</td>
           </tr>
 
           <tr class="delivery">
@@ -115,16 +115,16 @@
               <strong>Binissalem</strong>, <strong>Soller</strong> and <strong>Inca</strong> by
               <strong>3.00€</strong>
               <br /><br />
-              <input type="checkbox"> Please delivery this order to my address
+              <input type="checkbox" id="delivery-check"> Please delivery this order to my address
             </td>
-            <td class="product-total medium-text" style="vertical-align: top !important;">3.00€</td>
+            <td class="product-total medium-text" style="vertical-align: top !important;"><span>0.00</span>€</td>
           </tr>
 
           <tr class="total">
             <td class="product-name" colspan="6" class="medium-text">
               Total order
             </td>
-            <td class="product-total big-text">19.75€</td>
+            <td class="product-total big-text"><span>0.00</span>€</td>
           </tr>
 
         </table>
@@ -173,13 +173,59 @@
   </div>
 
   <script>
-    $('#delivery-check').change(function () {
-      if ($(this).attr("checked")) {
-        $("#delivery-controls").slideDown("fast");
-      } else {
-        $("#delivery-controls").slideUp("fast");
+    function modifyQuantity( event, quantity ){
+      event.preventDefault();
+
+      var row = $(event.currentTarget).parent().parent().parent();
+      var textField = row.find( ".product-controls input" );
+      var textFieldNewValue = +textField.val() + quantity;
+
+      var price = row.attr( "data-price" );
+      var availability = row.attr( "data-availability" );
+
+      textField.val( textFieldNewValue );
+
+      if( textField.val() > +availability ) {
+        textField.val( availability);
       }
-    });
+
+      if( textField.val() > 0 ) {
+        row.removeClass("no-activated");
+      } else {
+        textField.val( 0 );
+        row.addClass("no-activated");
+      }
+
+      updatePrices();
+    }
+
+    function updatePrices(){
+      var totalOrder = 0;
+
+      $( "#garden-producs tr.calculate" ).each( function(){
+        var row = $(this);
+        var quantity = row.find( ".product-controls input" ).val();
+        var price = row.attr( "data-price" );
+        var total = quantity * price;
+
+        totalOrder += total;
+
+        var totalField = row.find( ".product-total span" ).html( total.toFixed(2) );
+      });
+
+      if( $("#delivery-check").attr( "checked" ) ){
+        $(".delivery .product-total span").html( "3.00" );
+        totalOrder += 3;
+      } else {
+        $(".delivery .product-total span").html( "0.00" );
+      }
+
+      $( ".total .product-total span" ).html( totalOrder.toFixed(2) );
+    }
+
+    $('.add-quantity').click( function( event ) { modifyQuantity( event, 1 ) } );
+    $('.subtract-quantity').click( function( event ) { modifyQuantity( event, -1 ) } );
+    $("#delivery-check").change( updatePrices );
   </script>
 
 

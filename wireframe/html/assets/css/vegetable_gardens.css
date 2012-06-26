@@ -99,6 +99,8 @@ h2{
 }
 
 /***** HOME *****/
+
+
 #search #map,
 #search #results {
   height: 400px;
@@ -130,7 +132,7 @@ h2{
 }
 
 #search #header input {
-  font-size: 30px;
+  font-size: 25px;
   height: 35px;
 }
 
@@ -139,9 +141,16 @@ h2{
   background-color: #ddd;
 }
 
+#search #results .item-card h3 {
+  margin:0;
+  border-width: 0;
+}
+
 #search #results .item-contact a {
   color: black;
 }
+
+
 
 #search #results .item-contact {
   text-align: right;
@@ -149,6 +158,10 @@ h2{
 
   font-size: 10px;
   line-height: 12px;
+}
+
+#list-town strong{
+  font-size: 16px;
 }
 
 #tutorial {
@@ -375,6 +388,19 @@ vertical-align: middle !important;
 
 #garden-producs .product-total {
   width: 15%;
+}
+
+#garden-producs tr.sold-out .product-controls > div,
+#garden-producs tr.sold-out .product-total > div {
+  display: none;
+}
+
+#garden-producs tr.sold-out .product-availability {
+  font-weight: bold;
+}
+
+#garden-producs tr.sold-out td {
+  background-color: #eee;
 }
 
 /***** ORDER CONFIRM *****/

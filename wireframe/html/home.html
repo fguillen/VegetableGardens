@@ -11,6 +11,9 @@
   <link href="./assets/css/vegetable_gardens.css" rel="stylesheet">
 
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/vegetable_gardens.js"></script>
   <script>
 
     var map_styles =
@@ -84,7 +87,11 @@
         <div id="header">
           <form class="form-inline">
             Search Vegetable Gardens close to
-            <input type="text" class="input-medium" placeholder="town" name="town" />
+            <input type="text" id="search-town" class="input-medium" placeholder="town" name="town" />
+            <script>
+              if( $.urlParam('town') ) $("#search-town").val( $.urlParam('town') );
+            </script>
+
             <button class="btn btn-primary btn-large">
              <i class="icon-search icon-white"></i>
               search
@@ -98,7 +105,23 @@
           </div>
 
           <div id="results" class="">
-            <h5>List of all Vegetable Gardens</h5>
+            <div id="list-all" style="display:none">
+              <h5>List of all Vegetable Gardens</h5>
+            </div>
+            <script>
+              if( !$.urlParam('town') ) $("#list-all").show();
+            </script>
+
+            <div id="list-town" style="display:none">
+              <h5>Vegetable Gardens close to <strong></strong></h5>
+            </div>
+            <script>
+              if( $.urlParam('town') ) {
+                $("#list-town").show();
+                $("#list-town strong").html( $.urlParam('town') );
+              }
+            </script>
+
 
             <div class="item-card row">
               <div class="item-image span1">
