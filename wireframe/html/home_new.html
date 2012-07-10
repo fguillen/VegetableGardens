@@ -1,0 +1,377 @@
+<html>
+<head>
+  <title>Vegetable Gardens</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./assets/css/vegetable_gardens.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/vegetable_gardens.js"></script>
+  <script>
+
+    var map_styles =
+      [
+        {
+          stylers: [
+            { saturation: -100 },
+            { gamma: 0.36 },
+            { visibility: "on" }
+          ]
+        }
+      ]
+
+    function mapInitialize() {
+      var myLatlng = new google.maps.LatLng(39.755241,2.884598);
+      var myOptions = {
+        zoom: 10,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: map_styles
+      }
+      var map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title:"My Vegetable Garden 1"
+      });
+
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(39.753657,2.910004),
+          map: map,
+          title:"My Vegetable Garden 2"
+      });
+
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(39.736762,2.93335),
+          map: map,
+          title:"My Vegetable Garden 3"
+      });
+
+
+    }
+  </script>
+
+</head>
+<body onload="mapInitialize()">
+  <div id="wrapper" class="container">
+    <div id="header">
+      <div class="logo">
+        <img src="./assets/images/vegetable_trans.png" width="80">
+      </div>
+      <div class="titles">
+        <h1><a href="./home.html">Vegetable Gardens</a></h1>
+        <h2>eating extremely local</h2>
+      </div>
+      <div id="login-button">
+        <a href="./admin_login.html" class="btn btn-primary btn-large">I have a Vegetable Garden</a>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="logout-alert" class="alert alert-success" style="display:none">
+      Your session has been closed
+    </div>
+    <script>
+      if( $.urlParam('logout') ) $("#logout-alert").show();
+    </script>
+
+    <h3>
+      The channel between small vegetable garden horticulist and their neigbors those
+      are interested in healthy, testy and local products.
+    </h3>
+
+    <div id="content" class="home">
+
+
+      <div id="tutorial">
+        <h2>How it works</h2>
+        <div class="row">
+          <div class="tutorial-video span5">
+            <iframe src="http://blip.tv/play/gpZ2gbq1XwI.html?p=1" width="370" height="207" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#gpZ2gbq1XwI" style="display:none"></embed>
+          </div>
+          <div class="tutorial-text span7">
+            <p>
+              We are creating a huge list of Vegetable Gardens
+              here in Mallorca and give them the tools to offer
+              their products to their neighbors.
+            </p>
+            <p>
+              If you are growing a Vegetable Garden fill our
+              <a href="./admin_create.html">register form</a>
+              and start selling your products right now.
+            </p>
+            <p>
+              If you are a consummer use the
+              <a href="#">search system</a>
+              to find Vegetable Gardens close to your town.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <h2 style="border-bottom: 1px solid black; margin-bottom: 10px">I want to consume local products</h2>
+      <p style="font-size: 16px">Search Vegetable Gardens close to your town and buy their products</p>
+
+      <div id="search">
+        <div id="header">
+          <form class="form-inline">
+            Search Vegetable Gardens close to
+            <input type="text" id="search-town" class="input-medium" placeholder="town" name="town" />
+            <script>
+              if( $.urlParam('town') ) $("#search-town").val( $.urlParam('town') );
+            </script>
+
+            <button class="btn btn-primary btn-large">
+             <i class="icon-search icon-white"></i>
+              search
+            </button>
+          </form>
+        </div>
+
+        <div class="row">
+          <div id="map" class="span8">
+            The map
+          </div>
+
+          <div id="results" class="">
+            <div id="list-all">
+              <h5>List of all Vegetable Gardens</h5>
+            </div>
+            <script>
+              if( !$.urlParam('town') ) $("#list-all").show();
+            </script>
+
+            <div id="list-town" style="display:none">
+              <h5>Vegetable Gardens close to <strong></strong></h5>
+            </div>
+            <script>
+              if( $.urlParam('town') ) {
+                $("#list-all").hide();
+                $("#list-town").show();
+                $("#list-town strong").html( $.urlParam('town') );
+              }
+            </script>
+
+
+            <div class="item-card row">
+              <div class="item-image span1">
+                <img src="./assets/images/garden_300_300.jpeg" />
+              </div>
+              <div class="span3 item-descriptions">
+                <h3><a href="./garden_show.html">Garden of my granpa</a></h3>
+
+                <div class="item-description">
+                  This is a very good vegetable garden, and we do everything with a lot of love.
+                  This is a very good vegetable ...
+                </div>
+
+                <div class="item-contact">
+                  <div class="item-owner-name">
+                    Ask for <strong>Pedro Iglesias</strong>
+                  </div>
+
+                  <div class="item-email">
+                    <a href="mailto:test@email.com">test@email.com</a>
+                  </div>
+
+                  <div class="item-phone">
+                    0034 661 661 661
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- item-card -->
+
+            <div class="item-card row">
+              <div class="item-image span1">
+                <img src="./assets/images/garden_300_300.jpeg" />
+              </div>
+              <div class="span3 item-descriptions">
+                <h3><a href="./garden_show.html">Garden of my granpa</a></h3>
+                <div class="item-description">
+                  This is a very good vegetable garden, and we do everything with a lot of love.
+                  This is a very good vegetable ...
+                </div>
+
+                <div class="item-contact">
+                  <div class="item-owner-name">
+                    Ask for <strong>Pedro Iglesias</strong>
+                  </div>
+
+                  <div class="item-email">
+                    <a href="mailto:test@email.com">test@email.com</a>
+                  </div>
+
+                  <div class="item-phone">
+                    0034 661 661 661
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- item-card -->
+
+
+            <div class="item-card row">
+              <div class="item-image span1">
+                <img src="./assets/images/garden_300_300.jpeg" />
+              </div>
+              <div class="span3 item-descriptions">
+                <h3><a href="./garden_show.html">Garden of my granpa</a></h3>
+
+                <div class="item-description">
+                  This is a very good vegetable garden, and we do everything with a lot of love.
+                  This is a very good vegetable ...
+                </div>
+
+                <div class="item-contact">
+                  <div class="item-owner-name">
+                    Ask for <strong>Pedro Iglesias</strong>
+                  </div>
+
+                  <div class="item-email">
+                    <a href="mailto:test@email.com">test@email.com</a>
+                  </div>
+
+                  <div class="item-phone">
+                    0034 661 661 661
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- item-card -->
+
+
+            <div class="item-card row">
+              <div class="item-image span1">
+                <img src="./assets/images/garden_300_300.jpeg" />
+              </div>
+              <div class="span3 item-descriptions">
+                <h3><a href="./garden_show.html">Garden of my granpa</a></h3>
+
+                <div class="item-description">
+                  This is a very good vegetable garden, and we do everything with a lot of love.
+                  This is a very good vegetable ...
+                </div>
+
+                <div class="item-contact">
+                  <div class="item-owner-name">
+                    Ask for <strong>Pedro Iglesias</strong>
+                  </div>
+
+                  <div class="item-email">
+                    <a href="mailto:test@email.com">test@email.com</a>
+                  </div>
+
+                  <div class="item-phone">
+                    0034 661 661 661
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- item-card -->
+
+          </div>
+        </div>
+      </div> <!-- search -->
+
+
+      <br />
+      <h2 style="border-bottom: 1px solid black; margin-bottom: 10px">I have a Vegetable Garden</h2>
+      <p style="font-size: 16px">Log in your Vegetable Garden or create a new one if you haven't already done it</p>
+
+
+      <div id="content" class="login row">
+        <div id="login-signin" class="span5 login-box">
+          <h4>Access to your garden</h4>
+          <form>
+            <label class="big">Email</label>
+            <input type="text" class="span3 big">
+
+            <label class="big">Password</label>
+            <input type="text" class="span3 big">
+
+            <label class="checkbox">
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="./admin_orders.html?login=true" type="submit" class="btn btn-primary">Submit</a>
+          </form>
+        </div>
+
+        <div id="login-or" class="span2">
+          or
+        </div>
+
+        <div id="login-signup" class="span5 login-box">
+          <h4>Register your garden</h4>
+          <p>
+            <a href="./admin_create.html">
+              Fill the form to start selling Vegetables
+              from your Garden to your Neighbors
+            </a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <footer id="footer">
+      <div class="row">
+        <div class="footer-menu span4">
+          <h4>FAQs</h4>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">How to register your Vegetable Garden </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu span4">
+          <h4>Technical information</h4>
+          <ul>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">How to register your Vegetable Garden </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-menu span4">
+          <h4>Our Friends</h4>
+          <ul>
+            <li><a href="#">Wadus wadus</a></li>
+            <li><a href="#">Wadus wadus</a></li>
+            <li><a href="#">Wadus wadus</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+<!-- analytics -->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33016372-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
